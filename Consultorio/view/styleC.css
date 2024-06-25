@@ -1,0 +1,229 @@
+
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* forma como toda a pagina se comporta no geral */
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* customizando o titulo */
+h1 {
+    margin-bottom: 5px;
+}
+
+/* tag onde ficará os botoes que leva as partes especificas do site*/
+nav {
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #c7c7c7 100%);
+    margin-top: -0.9px;
+    height: 6vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    border-bottom: 3px solid black;
+}
+
+
+/* botoes */
+a { 
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    transition: 0.6s;
+} 
+
+/* botao ao passar o mouse por cima */
+
+a:hover{
+    background-color: rgb(149, 169, 187);
+    color: aquamarine;
+}
+
+
+/* parte de cima da pagina */
+.header{
+    padding-top: 20px;
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #9fbdff 100%);
+    background-position-x: 140%;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+
+/* customizando sliders */
+.content {
+    height: 520px;
+    width: 930px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 33%;
+    display: flex;
+}
+
+.barra{
+    width: 70px;
+    height: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 6px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.barra:hover{
+    background-color: rgb(192, 230, 255);
+}
+
+.textbox {
+    display: flex;
+    width: 13rem;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+input{
+    display: none;
+}
+
+button {
+    margin-top: 15px;
+    display: flex;
+    width: 13rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #9fbdff 100%);
+    
+}
+
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    font-size: 0; /* Remove espaços entre elementos inline */
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+    padding: 0; /* Remover padding padrão */
+    margin: 0; /* Remover margem padrão */
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+/* Contato */
+
+.contato{
+    margin-top: 50%;
+    border-top: 3px solid black;
+    height: 400px;
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #c7c7c7 100%);
+}
+
+.h1c{
+    margin-left: 18.5em;
+    margin-top: 0.5em;
+}
+
+iframe{
+    margin-top: 1em;
+    margin-left: 5em;
+}
+
+.csobre{
+    display: flex;
+}
+
+.sobreparagrafos{
+    margin-left: 1em;
+    margin-top: 5em;
+}
+
+
+
+
+/* footer */
+
+footer{
+    border-top: 3px solid black;
+    height: 150px;
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #9fbdff 100%);
+}
+
+.sobre {
+    margin-left: 19em;
+    margin-top: 0.5em;
+}
+
+.info {
+    text-align:center;
+}
+
+/* Cadastro */
+
+.cadastro {
+    border: 3px solid black;
+    margin-left: 37%;
+    margin-top: 10%;
+    padding: 20px;
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #84ffa9 100%);
+    height: 350px;
+    width: 350px;
+    text-align: center;
+}
+
+.resposta{
+    margin-top: 3rem;
+    margin-left: 37%;
+    background-image: radial-gradient(100% 120% at 60% 0, #ffffff 0, #d9ffa8 100%);
+    height: 150px;
+    width: 350px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid black;
+    margin-bottom: 2rem;
+}
